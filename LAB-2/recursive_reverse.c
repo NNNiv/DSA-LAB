@@ -6,16 +6,15 @@ void main()
     printf("Enter a number ");
     scanf("%d", &num);
 
-    printf("The reversed number is %d ", rev(num));
-
+    printf("The reversed number is %d", rev(num));
 }
 
 int rev(int num)
 {
-    static int n =0;
-    if (num>0)
-        n = (n*10)+(num%10);
+    static int n = 0;
+    if (num > 0)
+        n = (n * 10) + (num % 10);
     else
         return n;
-    return rev(num/10);
+    return rev(num / 10);
 }
