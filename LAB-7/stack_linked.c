@@ -72,7 +72,7 @@ void push()
 void pop()
 {
     if (top == NULL)
-        printf("Stack is empty\n");
+        printf("Stack underflow\n");
     else
     {
         struct Node *ptr = top;
@@ -88,7 +88,7 @@ void display()
     if (top == NULL)
         printf("Stack is empty\n");
     else {
-        printf("Contents of the stack:\n\n");
+        printf("\nContents of the stack:\n");
         struct Node *ptr = top;
         while (ptr != NULL)
         {

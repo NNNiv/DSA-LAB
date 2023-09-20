@@ -68,39 +68,10 @@ void enqueue()
         ptr->next = temp;
     }
 }
-/*
 void dequeue()
 {
     if (head == NULL)
-        printf("Queue Underflow\n");
-    else if (head->next == NULL)
-    {
-        struct Node *ptr = head;
-        int val = head->value;
-        printf("%d was dequeued\n");
-        head = ptr->next;
-        free(ptr);
-        length--;
-    }
-    else
-    {
-        struct Node *ptr = head;
-        struct Node *prev_ptr = NULL;
-        while (ptr->next != NULL)
-        {
-            prev_ptr = ptr;
-            ptr = ptr->next;
-        }
-        prev_ptr->next = NULL;
-        free(ptr);
-    }
-
-}
-*/
-void dequeue()
-{
-    if (head == NULL)
-        printf("Stack is empty\n");
+        printf("Queue underflow \n");
     else
     {
         struct Node *ptr = head;
