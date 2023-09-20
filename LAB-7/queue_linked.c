@@ -87,7 +87,7 @@ void display()
     if (head == NULL)
         printf("Queue is empty\n");
     else {
-        printf("Contents of the stack:\n\n");
+        printf("\nContents of the queue:\n");
         struct Node *ptr = head;
         while (ptr != NULL)
         {
