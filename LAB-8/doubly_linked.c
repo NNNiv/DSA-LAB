@@ -1,5 +1,7 @@
-#include<stdio.h>
-#include<stdlib.h>
+// I yoinked this from my roommate
+
+#include <stdio.h>
+#include <stdlib.h>
 
 struct Node {
     int data;
