@@ -121,14 +121,8 @@ int main()
         printf("Enter element to delete: ");
         scanf("%d", &element);
         struct Node* temp;
-        temp = delete(root, element);
-        if (temp == root) 
-          printf("Element not found in BST\n");
-        else
-        {
-          root = temp;
-          printf("Node deleted\n");
-        }
+        root = delete(root, element);
+        printf("Node deleted\n");
 
         break;
       case 3:
