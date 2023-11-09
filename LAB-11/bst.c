@@ -150,6 +150,7 @@ int main()
         exit(0);
       default:
         printf("\nInvalid choice\n");
+        break;
     }
   }
     return 0;
